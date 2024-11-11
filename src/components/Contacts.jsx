@@ -53,56 +53,87 @@ const Contacts = () => {
   };
 
   return (
-    <section className="contact">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className="my-10 text-center text-4xl"
-      >
-        {" "}
-        Get in Touch
-      </motion.h2>
-      <motion.form
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.5 }}
-        onSubmit={onSubmit}
-      >
-        <h2>Contact Form</h2>
-        <div className="input-box">
-          <label htmlFor="name">Full Name</label>
-          <input
-            type="text"
-            className="field"
-            name="name"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-        <div className="input-box">
-          <label htmlFor="email">Email Address</label>
-          <input
-            type="email"
-            name="email"
-            className="field"
-            placeholder="Enter your Email"
-            required
-          />
-        </div>
-        <div className="input-box">
-          <label htmlFor="message">Your Message</label>
-          <textarea
-            name="message"
-            className="field mess"
-            placeholder="Enter your message"
-            required
-          ></textarea>
-        </div>
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? "Sending..." : "Send Message"}
-        </button>
-      </motion.form>
+    <section
+      id="contact"
+      className="contact bg-gradient-to-r from-coral-500 to-coral-700 py-20"
+    >
+      <div className="container mx-auto px-6">
+        <motion.h2
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 0.5 }}
+          className="text-center text-4xl font-bold text-white mb-10"
+        >
+          Get in Touch
+        </motion.h2>
+        <motion.form
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+          onSubmit={onSubmit}
+          className="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto space-y-6"
+        >
+          <h2 className="text-2xl  font-semibold text-gray-800">
+            Send me a message
+          </h2>
+
+          {/* Name Input */}
+          <div className="input-box">
+            <label htmlFor="name" className="text-gray-700 text-sm font-medium">
+              Full Name
+            </label>
+            <input
+              type="text"
+              className="field w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coral-500"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          {/* Email Input */}
+          <div className="input-box">
+            <label
+              htmlFor="email"
+              className="text-gray-700 text-sm font-medium"
+            >
+              Email Address
+            </label>
+            <input
+              type="email"
+              name="email"
+              className="field w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coral-500"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+
+          {/* Message Input */}
+          <div className="input-box">
+            <label
+              htmlFor="message"
+              className="text-gray-700 text-sm font-medium"
+            >
+              Your Message
+            </label>
+            <textarea
+              name="message"
+              className="field mess w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-coral-500"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+
+          {/* Submit Button */}
+          <button
+            className="w-full py-3 text-white bg-red-500 rounded-lg hover:bg-red-700 transition duration-300 ease-in-out disabled:bg-gray-300"
+            type="submit"
+            disabled={isLoading}
+          >
+            {isLoading ? "Sending..." : "Send Message"}
+          </button>
+        </motion.form>
+      </div>
     </section>
   );
 };
