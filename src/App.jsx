@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import Contacts from "./components/Contacts";
 import Experience from "./components/Experience";
@@ -7,8 +8,35 @@ import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
+import Reviews from "./components/Reviews";
 
 const App = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  // Track scroll position to toggle visibility of the button
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Scroll to top handler
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
       {/* Background Layers */}
@@ -40,12 +68,26 @@ const App = () => {
           <section id="projects">
             <Projects />
           </section>
+          <section id="reviews">
+            <Reviews />
+          </section>
           <section id="contacts">
             <Contacts />
           </section>
         </main>
         <Footer />
       </div>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-cyan-500 text-white p-3 rounded-sm shadow-lg hover:bg-cyan-600 transition duration-300"
+          aria-label="Scroll to top"
+        >
+          ⬆
+        </button>
+      )}
     </div>
   );
 };

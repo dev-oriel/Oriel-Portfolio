@@ -6,11 +6,18 @@ import project5 from "../assets/projects/vendezmoi.png";
 import project6 from "../assets/projects/atlas.png";
 import micropost from "../assets/projects/micropost.png";
 import equifast from "../assets/projects/Equifast white .png";
-import blackmark_logo from "../assets/projects/Blackmark Logo fn.png"; 
-import apple_logo from "../assets/projects/Apple Logo Demo.png"; 
-import happiness from "../assets/projects/HAPPINESS KWAMBOKA NYABUTO.png"; 
+import blackmark_logo from "../assets/projects/Blackmark Logo fn.png";
+import apple_logo from "../assets/projects/Apple Logo Demo.png";
+import happiness from "../assets/projects/HAPPINESS KWAMBOKA NYABUTO.png";
 import blackmark_rate_card from "../assets/projects/Blackmark Rate Card 2.png";
-import food_poster from "../assets/projects/Modern Food Poster.png"; 
+import food_poster from "../assets/projects/Modern Food Poster.png";
+
+import banana from "../assets/projects/Banana Typography.png";
+import event_poster from "../assets/projects/Event poster 001.png";
+import mazingira from "../assets/projects/Happy mazingira day.png";
+import ig_post from "../assets/projects/IG post.png";
+import instagram_catchy from "../assets/projects/Instagram Catchy Post.png";
+import victim from "../assets/projects/THE VICTIM.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React, as well as back-end technologies like Node.js, Express.js, PHP laravel,  Django and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -176,6 +183,48 @@ export const PROJECTS = [
     technologies: [],
     category: "Graphic Design",
   },
+  {
+    title: "Equifast Logo",
+    image: event_poster,
+    description: "",
+    technologies: [],
+    category: "Graphic Design",
+  },
+  {
+    title: "Blackmark Rate Card",
+    image: banana,
+    description: "",
+    technologies: [],
+    category: "Graphic Design",
+  },
+  {
+    title: "Food Poster",
+    image: ig_post,
+    description: "",
+    technologies: [],
+    category: "Graphic Design",
+  },
+  {
+    title: "Campaign Poster",
+    image: mazingira,
+    description: "",
+    technologies: [],
+    category: "Graphic Design",
+  },
+  {
+    title: "IG catchy post",
+    image: instagram_catchy,
+    description: "",
+    technologies: [],
+    category: "Graphic Design",
+  },
+  {
+    title: "Movie Poster",
+    image: victim,
+    description: "",
+    technologies: [],
+    category: "Graphic Design",
+  },
 ];
 
 export const CONTACT = {
@@ -183,3 +232,24 @@ export const CONTACT = {
   phoneNo: "+254 758 997 669 ",
   email: "kiplangatoriel@gmail.com",
 };
+
+export const REVIEWS = [
+  {
+    name: "Marion Chelangat",
+    title: "Co-Founder, Blackmark Solutions ",
+    review:
+      "Working with Oriel has been a fantastic experience! The quality of work and dedication to our project exceeded expectations. Highly recommended.",
+  },
+  {
+    name: "Judith Makau",
+    title: "Centre Manager - Bomet Huduma centre",
+    review:
+      "Oriel's creativity and technical skills brought our vision to life. The designs and functionality were exactly what we needed.",
+  },
+  {
+    name: "Mark Johnson",
+    title: "Freelancer",
+    review:
+      "Amazing attention to detail and seamless communication throughout the project. I couldn't have asked for a better developer.",
+  },
+];
