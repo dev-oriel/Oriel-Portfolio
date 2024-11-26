@@ -1,7 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiLaravel } from "react-icons/si"; // Import Laravel icon
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
+import { SiLaravel, SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { motion } from "framer-motion";
@@ -21,71 +19,80 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div id="Technologies" className="border-b border-neutral-800 pb-24">
+    <section
+      id="Technologies"
+      className="py-24 flex flex-col items-center bg-gray-900 border-b border-neutral-700 text-white"
+    >
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        initial={{ opacity: 0, y: -50 }}
+        transition={{ duration: 1 }}
+        className="text-center text-5xl font-extrabold text-cyan-500 mb-12"
       >
         Technologies
       </motion.h2>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
+        initial={{ opacity: 0, x: -50 }}
+        transition={{ duration: 1 }}
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center"
       >
+        {/* React Icon */}
         <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="flex flex-col items-center gap-2 rounded-2xl border-4 border-cyan-400 p-6 hover:scale-110 transition-transform duration-300 ease-in-out"
         >
           <RiReactjsLine className="text-7xl text-cyan-400" />
+          <span className="text-lg font-medium">React</span>
         </motion.div>
+
+        {/* Laravel Icon */}
         <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="flex flex-col items-center gap-2 rounded-2xl border-4 border-red-600 p-6 hover:scale-110 transition-transform duration-300 ease-in-out"
         >
-          <SiLaravel className="text-7xl text-red-600" /> {/* Laravel Icon */}
+          <SiLaravel className="text-7xl text-red-600" />
+          <span className="text-lg font-medium">Laravel</span>
         </motion.div>
+
+        {/* MongoDB Icon */}
         <motion.div
           variants={iconVariants(5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="flex flex-col items-center gap-2 rounded-2xl border-4 border-green-500 p-6 hover:scale-110 transition-transform duration-300 ease-in-out"
         >
           <SiMongodb className="text-7xl text-green-500" />
+          <span className="text-lg font-medium">MongoDB</span>
         </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <DiRedis className="text-7xl text-red-700" />
-        </motion.div>
+
+        {/* Node.js Icon */}
         <motion.div
           variants={iconVariants(6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="flex flex-col items-center gap-2 rounded-2xl border-4 border-green-500 p-6 hover:scale-110 transition-transform duration-300 ease-in-out"
         >
           <FaNodeJs className="text-7xl text-green-500" />
+          <span className="text-lg font-medium">Node.js</span>
         </motion.div>
+
+        {/* PostgreSQL Icon */}
         <motion.div
           variants={iconVariants(4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="flex flex-col items-center gap-2 rounded-2xl border-4 border-sky-700 p-6 hover:scale-110 transition-transform duration-300 ease-in-out"
         >
           <BiLogoPostgresql className="text-7xl text-sky-700" />
+          <span className="text-lg font-medium">PostgreSQL</span>
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 
