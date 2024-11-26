@@ -1,4 +1,3 @@
-import React from "react";
 import { REVIEWS } from "../constants";
 import { motion } from "framer-motion";
 
@@ -29,7 +28,7 @@ const Reviews = () => {
               <h3 className="text-xl font-semibold">{review.name}</h3>
               <p className="text-sm text-gray-400">{review.title}</p>
             </div>
-            <p className="text-gray-300">"{review.review}"</p>
+            <p className="text-gray-300">&quot;{review.review}&quot;</p>
           </motion.div>
         ))}
       </div>
