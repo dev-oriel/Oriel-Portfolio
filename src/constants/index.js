@@ -14,8 +14,6 @@ import food_poster from "../assets/projects/Modern Food Poster.png";
 
 import banana from "../assets/projects/Banana Typography.png";
 import event_poster from "../assets/projects/Event poster 001.png";
-import mazingira from "../assets/projects/Happy mazingira day.png";
-import ig_post from "../assets/projects/IG post.png";
 import instagram_catchy from "../assets/projects/Instagram Catchy Post.png";
 import victim from "../assets/projects/THE VICTIM.png";
 

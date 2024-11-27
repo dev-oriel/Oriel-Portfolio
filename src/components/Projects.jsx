@@ -30,7 +30,7 @@ const Projects = () => {
 
       {/* Category Buttons */}
       <div className="my-8 w-full flex justify-center px-4">
-        <ul className="flex flex-wrap gap-4">
+        <ul className="flex flex-wrap justify-center gap-4">
           {["All", "Development", "Graphic Design"].map((category) => (
             <li key={category}>
               <button

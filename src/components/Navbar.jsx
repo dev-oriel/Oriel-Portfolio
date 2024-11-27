@@ -66,14 +66,15 @@ const Navbar = () => {
           <a href="#contacts" className={linkClasses("contacts")}>
             Contacts
           </a>
-          {/* "Hire Me" Button */}
-          <a
+          
+        </div>
+        {/* "Hire Me" Button */}
+        <a
             href="#contacts"
-            className="ml-4 px-8 py-3 text-sm font-medium text-white bg-cyan-600 rounded-md shadow-md hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-purple-300 transition"
+            className="ml-4 hidden md:block px-8 py-3 text-sm font-medium text-white bg-cyan-600 rounded-md shadow-md hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-purple-300 transition"
           >
             Hire Me
           </a>
-        </div>
 
         {/* Social Media Links */}
         <div className="hidden lg:flex items-center space-x-4 text-2xl text-gray-300">

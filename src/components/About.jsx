@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative py-10 sm:py-20 border-b border-neutral-700 bg-gray-900">
+    <div className="relative px-0 py-6 sm:py-20 border-b border-neutral-700 bg-gray-900">
       <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl font-bold tracking-wider text-gray-100">
         About <span className="text-cyan-400">Me</span>
       </h1>
-      <div className="mt-6 sm:mt-12 flex flex-wrap lg:flex-nowrap justify-center items-center gap-8 lg:gap-16 px-6">
+      <div className="mt-6 sm:mt-12 flex flex-wrap lg:flex-nowrap justify-center items-center gap-8 lg:gap-16 px-2 md:px-6">
         {/* Image Section */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -33,7 +33,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.6 }}
-          className="w-full lg:w-1/2 text-center lg:text-left"
+          className="w-full lg:w-1/2 text-left"
         >
           <p className="text-base sm:text-lg lg:text-xl font-light leading-7 sm:leading-8 text-gray-300 max-w-xl mx-auto lg:mx-0">
             {ABOUT_TEXT}
