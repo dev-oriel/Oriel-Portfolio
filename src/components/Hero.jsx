@@ -13,7 +13,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white border-b border-neutral-700 pb-10 lg:mb-35">
+    <div className="relative  bg-gray-900 text-white border-b border-neutral-700 pb-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 py-10 md:py-16 flex flex-wrap items-center">
         {/* Left Section */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -85,9 +85,9 @@ const Hero = () => {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.5, delay: 1.2 }}
-              className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 text-center"
+              className="absolute bottom-[-40px] left-1/4 md:left-1/3 transform -translate-x-1/2 text-center"
             >
-              <p className="text-sm text-gray-400">
+              <p className="text-sm md:text-lg text-gray-400">
                 &quot; Turning visions into code &quot;
               </p>
             </motion.div>

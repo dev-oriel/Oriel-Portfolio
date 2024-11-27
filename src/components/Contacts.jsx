@@ -55,14 +55,14 @@ const Contacts = () => {
   return (
     <section
       id="contact"
-      className="relative py-20 md:pb-64 px-6 bg-gray-900 text-white"
+      className="relative  md:py-20 py-10 md:pb-64 md:px-6  bg-gray-900 text-white"
     >
-      <div className="container mx-auto">
+      <div className="container  mx-auto">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
-          className="text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-500 to-pink-500 mb-14"
+          className="text-center text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-500 to-pink-500 mb-8 md:mb-14"
         >
           Get in Touch
         </motion.h2>
@@ -71,9 +71,9 @@ const Contacts = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           transition={{ duration: 0.5 }}
           onSubmit={onSubmit}
-          className="bg-white/80 backdrop-blur-lg p-8 rounded-xl shadow-xl max-w-lg mx-auto space-y-6"
+          className="bg-white/80 backdrop-blur-lg p-3 md:p-8 rounded-md shadow-sm md:shadow-xl w-full md:max-w-lg mx-auto space-y-3 md:space-y-6"
         >
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="md:text-2xl text-lg font-semibold text-gray-800 mb-2 md:mb-4 pb-2 md:pb-4">
             Send Me a Message
           </h2>
 
@@ -88,7 +88,7 @@ const Contacts = () => {
             <input
               type="text"
               name="name"
-              className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="mt-1 block w-full md:p-3 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none  "
               placeholder="Enter your name"
               required
             />
@@ -105,7 +105,7 @@ const Contacts = () => {
             <input
               type="email"
               name="email"
-              className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="mt-1 block w-full md:p-3 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none  "
               placeholder="Enter your email"
               required
             />
@@ -121,7 +121,7 @@ const Contacts = () => {
             </label>
             <textarea
               name="message"
-              className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="mt-1 block w-full md:p-3 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none  "
               placeholder="Enter your message"
               rows="4"
               required

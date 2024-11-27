@@ -19,9 +19,12 @@ import ig_post from "../assets/projects/IG post.png";
 import instagram_catchy from "../assets/projects/Instagram Catchy Post.png";
 import victim from "../assets/projects/THE VICTIM.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React, as well as back-end technologies like Node.js, Express.js, PHP laravel,  Django and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `Hi! and welcome to my Portfolio where I have listed some of my skills, projects and achievements. Get to know me more 😊`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 2 years of professional experience, I have worked with a variety of technologies, including React, Node.js, Express.js, PHP laravel, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a passionate full stack developer with a passion for creating efficient and user-friendly web applications. 
+I have worked with a variety of technologies, including React, Node.js, Express.js, PHP laravel and MongoDB. I am also a graphic designer currently working as a freelancer. 
+I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding and graphic design, 
+I enjoy exploring new places and adventuring`;
 
 export const EXPERIENCES = [
   {
@@ -51,7 +54,7 @@ export const EDUCATION = [
     year: "2020 - 2024",
     role: "Bachelor of Science in Information Technology",
     institution: "Kabarak University",
-    description: `My degree provided a strong foundation in core computer science principles, including programming, algorithms, and systems design. It also offered hands-on exposure to cutting-edge technologies and real-world problem-solving, preparing me to excel in the ever-evolving tech industry.`,
+    description: `My degree provided a strong foundation in core computer science concepts, including programming, algorithms and systems design principles. It also offered hands-on exposure to cutting-edge technologies and real-world problem-solving, preparing me to excel in the ever-evolving tech industry.`,
     technologies: [""],
   },
   {
@@ -197,7 +200,7 @@ export const PROJECTS = [
     technologies: [],
     category: "Graphic Design",
   },
-  
+
   {
     title: "IG catchy post",
     image: instagram_catchy,
@@ -234,9 +237,9 @@ export const REVIEWS = [
       "Oriel's creativity and technical skills brought our vision to life. The designs and functionality were exactly what we needed.",
   },
   {
-    name: "Mark Johnson",
-    title: "Freelancer",
+    name: "Michael Ngeno",
+    title: "Software Engineer",
     review:
-      "Amazing attention to detail and seamless communication throughout the project. I couldn't have asked for a better developer.",
+      "I have worked several projects with Oriel. His collaborative skills, the level of detail and the quality of codes are top class.",
   },
 ];

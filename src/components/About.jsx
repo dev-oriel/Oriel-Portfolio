@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative py-16 sm:py-20 border-b border-neutral-700 bg-gray-900">
+    <div className="relative py-10 sm:py-20 border-b border-neutral-700 bg-gray-900">
       <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl font-bold tracking-wider text-gray-100">
         About <span className="text-cyan-400">Me</span>
       </h1>
-      <div className="mt-10 sm:mt-12 flex flex-wrap lg:flex-nowrap justify-center items-center gap-8 lg:gap-16 px-6">
+      <div className="mt-6 sm:mt-12 flex flex-wrap lg:flex-nowrap justify-center items-center gap-8 lg:gap-16 px-6">
         {/* Image Section */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}

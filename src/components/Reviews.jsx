@@ -5,13 +5,13 @@ const Reviews = () => {
   return (
     <section
       id="reviews"
-      className="py-20 bg-gray-900 text-white border-b border-neutral-700"
+      className="py-10 md:py-20 bg-gray-900 text-white border-b border-neutral-700"
     >
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -50 }}
         transition={{ duration: 1 }}
-        className="text-center text-5xl font-bold text-cyan-500 mb-10"
+        className="text-center text-4xl sm:text-5xl font-bold text-cyan-500 mb-10"
       >
         What People Say
       </motion.h2>

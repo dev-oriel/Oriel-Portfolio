@@ -48,7 +48,7 @@ const App = () => {
 
       {/* Application Content */}
       <div className="container mx-auto px-4">
-        <header className="border-2 border-red-500 mb-28">
+        <header className="mb-20">
           <Navbar />
         </header>
         <main>

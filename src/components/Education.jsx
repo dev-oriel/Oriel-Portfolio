@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="bg-gray-900 py-20 border-b border-neutral-700 flex justify-center items-center flex-col"
+      className="bg-gray-900 py-10 md:py-20 border-b border-neutral-700 flex justify-center items-center flex-col"
     >
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}

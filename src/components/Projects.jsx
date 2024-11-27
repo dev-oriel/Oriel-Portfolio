@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 flex flex-col items-center bg-gray-900 border-b border-neutral-700"
+      className=" py-10 md:py-20 flex flex-col items-center bg-gray-900 border-b border-neutral-700"
     >
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const Projects = () => {
                 className={`${
                   selectedCategory === category
                     ? "bg-cyan-500 text-white"
-                    : "outline outline-2 outline-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-white"
+                    : "outline outline-2 outline-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:outline-none hover:text-white"
                 } rounded-md px-4 py-2 text-sm md:text-md`}
               >
                 {category}

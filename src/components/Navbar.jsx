@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4 lg:px-10">
         {/* Logo */}
         <div className="flex items-center">
-          <img className="w-40" src={logo} alt="logo" />
+          <img className="w-24" src={logo} alt="logo" />
         </div>
 
         {/* Desktop Links */}
@@ -120,7 +120,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden bg-gray-900 border-t border-gray-800">
