@@ -184,33 +184,20 @@ export const PROJECTS = [
     category: "Graphic Design",
   },
   {
-    title: "Equifast Logo",
+    title: "Event poster",
     image: event_poster,
     description: "",
     technologies: [],
     category: "Graphic Design",
   },
   {
-    title: "Blackmark Rate Card",
+    title: "Banana",
     image: banana,
     description: "",
     technologies: [],
     category: "Graphic Design",
   },
-  {
-    title: "Food Poster",
-    image: ig_post,
-    description: "",
-    technologies: [],
-    category: "Graphic Design",
-  },
-  {
-    title: "Campaign Poster",
-    image: mazingira,
-    description: "",
-    technologies: [],
-    category: "Graphic Design",
-  },
+  
   {
     title: "IG catchy post",
     image: instagram_catchy,
