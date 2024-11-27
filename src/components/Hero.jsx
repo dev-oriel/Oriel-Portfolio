@@ -79,7 +79,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
-              className="absolute inset-0 bg-gradient-to-t from-cyan-600 via-transparent to-black opacity-50 rounded-lg"
+              className="absolute inset-0 bg-gradient-to-t from-cyan-600 via-transparent to-gray-900 opacity-50 rounded-lg"
             ></motion.div>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
