@@ -1,10 +1,11 @@
 import aboutImg from "../assets/oriel2.jpg";
+import resume from "../assets/ORIEL KIPLANGAT RESUME.pdf";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative py-20 border-b border-neutral-700 bg-gray-900 ">
+    <div className="relative py-20 border-b border-neutral-700 bg-gray-900">
       <h1 className="text-center text-4xl font-bold tracking-wider text-gray-100 lg:text-5xl">
         About <span className="text-cyan-400">Me</span>
       </h1>
@@ -17,7 +18,6 @@ const About = () => {
           className="relative w-full lg:w-1/2 p-6 lg:pl-0"
         >
           <div className="relative group">
-            {/* Add padding and ensure the image does not stretch */}
             <img
               className="rounded-lg shadow-lg w-full lg:max-w-md h-auto transition-transform duration-500 group-hover:scale-105"
               src={aboutImg}
@@ -39,14 +39,26 @@ const About = () => {
             <p className="text-lg lg:text-xl font-light text-center lg:text-left leading-8 text-gray-300 max-w-xl">
               {ABOUT_TEXT}
             </p>
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-8 px-6 py-3 text-lg font-medium text-white bg-cyan-600 rounded-md shadow-md hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300"
-            >
-              Get in Touch
-            </motion.a>
+            {/* Buttons Section */}
+            <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
+              <motion.a
+                href="#contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-3 text-lg font-medium text-white bg-cyan-600 rounded-md shadow-md hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+              >
+                Hire Me
+              </motion.a>
+              <motion.a
+                href={resume}
+                download="ORIEL KIPLANGAT.pdf"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-3 text-lg font-medium text-gray-900 bg-gray-300 rounded-md shadow-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              >
+                Download CV
+              </motion.a>
+            </div>
           </div>
         </motion.div>
       </div>
